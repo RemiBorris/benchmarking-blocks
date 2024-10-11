@@ -1,5 +1,8 @@
 def benchmark
-  # Your benchmarking code goes here.
+  time_start = Time.now
+  yield
+  time_end = Time.now
+  time_end - time_start
 end
  
 # Be careful, pasting this into IRB will take a long time to print.
